@@ -1,0 +1,197 @@
+<!DOCTYPE.html>
+<html>
+    <head>
+        <title>Difference Between Document and Window Objects</title>
+    </head>
+    <body>
+        <h1>Difference Between Document and Window Objects</h1>
+        <p>
+            <h2>Document Objects:</h2>
+            The document object represent a web page that is loaded in the browser. 
+            By accessing the document object, we can access the element in the HTML page.
+             With the help of document objects, we can add dynamic content to our web page. 
+             The document object can be accessed with a window.document or just document.
+             <br>
+             <br>
+             <b>Syntax:</b>
+             <br>
+             <strong>document.property_name;</strong>
+             <br>
+             <br>
+             <h3>Properties of document:</h3>
+             <ul>
+                    <li>activeElement: It returns the currently active elements in the document.</li>
+                    <li>body: It returns the contents of the body element.</li>
+                    <li>anchors: It returns all <a> elements that have a name attribute.</li>
+                    <li>baseURI: It returns a string value that represents the base URI of the document.</li>
+                    <li>cookie: It returns the cookie of the current document.</li>
+                    <li>charSet: It returns a string, representing the document’s character encoding.</li>
+                    <li>defaultView: It returns the current Window Object.</li>
+                    <li>designMode: It is used to set documents as editable or read-only.</li>
+                    <li>domain: It returns the domain name of the document server.</li>
+                    <li>doctype: It returns the document’s doctype.</li>
+                    <li>embeds: It returns the collection of all embedded elements.</li>
+                    <li>URL: It returns the complete URL of the document.</li>
+                    <li>forms: It returns all the elements of the form.</li>
+                    <li>fullScreenElement: It returns the element that is currently present in full-screen mode.</li>
+                    <li>title: It returns the title element of the document.</li>
+                    <li>head: It returns the head element of the document.</li>
+                    <li>links: It returns all <area> and <a> elements that have a href attribute.</li>
+                    <li>lastModified: It returns the date and time of the current document that was last modified.</li>
+                    <li>images: It returns the collection of <img> elements in the document.</li>
+                    <li>implementation: It returns the DOMImplementation object associated with the current document.</li>
+                    <li>readyState: It returns the loading status of the current document.</li>
+                    <li>referrer: It returns the URI of the page that is linked to the current page.</li>
+                    <li>scripts: It returns all script elements present in the document.</li>
+                    <li>strictErrorChecking: It sets or returns whether strict error checking can be enforced on a document or not.</li>
+             </ul>
+             <h3>Methods of Document:</h3>
+             <b>Syntax:</b>
+             <br>
+             <strong>document.method_name;</strong>
+             <br>
+             <br>
+             The list of most commonly used methods are listed below:
+             <br>
+             <ul>
+
+                <li>addEventListener(): It is used to attach an event handler to the specified element.</li>
+                <li>adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.</li>
+                <li>close(): It is used to close the output stream.</li>
+                <li>createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.</li>
+                <li>createComment(): It is used to create a comment node with some text.</li>
+                <li>createDocumentFragment(): It is used to create the document fragment to change the content of the document.</li>
+                <li>createElement(): It is used to create HTML element .</li>
+                <li>createEvent(): It is used to create a new events object.</li>
+                <li>createTextNode(): It is used to create a textnode.</li>
+                <li>execCommand(): It is used to execute a command specified by the user on the editable selected section. It returns a Boolean value.</li>
+                <li>fullscreenEnabled(): It is used to check whether the document can be viewed in fullscreen mode or not. It returns a boolean value.</li>
+                <li>etElementById(): It returns the object of the given ID. If no object with that id exists then it returns null.</li>
+                <li>getElementsByClassName(): It returns an object containing all the elements with the specified class names in the document as objects.</li>
+                <li>getElementsByName(): It returns an object containing all the elements with the specified name in the document as objects.</li>
+                <li>getElementsByTagName(): It returns an object containing all the elements with the specified tag names in the document as objects.</li>
+                <li>hasFocus(): It returns a boolean value that indicates whether the document or element has focus or not.</li>
+                <li>importNode(): It imports the copy of a node from another document in the current document.</li>
+                <li>normalize(): It flushes out the empty nodes and merges the adjacent text nodes with the first text node and</li>
+                <li>normalizeDocument(): It is used to normalize an HTML document by removing any empty text nodes and joining the adjacent text nodes.</li>
+                <li>open(): It is used to open the output stream to collect the output.</li>
+                <li>querySelector(): It returns the first element that matches a specified CSS selector(s) in the document.</li>
+                <li>querySelectorAll(): It returns a collection of an element’s child elements that matches a specified CSS selector(s) in the document</li>
+                <li>removeEventListener(): It removes the event handler from an element that has an attached event.</li>
+                <li>renameNode(): It is used to rename the node.</li>
+                <li>write(): It is used to write some content or javascript code in the document.</li>
+                <li>writeln(): It is used to write a document with a newline character after each statement.</li>
+             </ul>
+        </p>
+        <p>
+            <h2>Window Objects:</h2>
+            The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage.
+            Whenever a window appears on the screen to display the contents of the document, the window object is created.
+            <br>
+            <br>
+            <b>Syntax:</b>
+            <br>
+            <strong>window.property_name;</strong>
+            <br>
+            <br>
+            The properties of Window objects that are commonly used are listed in the below table:
+            <br>
+            <h3>Properties of the Window:</h3>
+            <ul>
+                <li>Closed: It holds a Boolean value that represents whether the window is closed or not.</li>
+                <li>console: It returns a reference to the console object which provides access to the browser’s debugging console.</li>
+                <li>defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.</li>
+                <li>controllers: It returns the XUL controller objects for the current Chrome window.</li>
+                <li>customElements: It returns a reference to the CustomElementRegistry object, which can be used to register new custom elements and also get information about already registered custom elements.</li>
+                <li>crypto: It returns the browser crypto object.</li>
+                <li>devicePixelRatio: It returns the ratio between physical pixels and device-independent pixels in the current display.</li>
+                <li>Document: It returns a reference to the document object of that window.</li>
+                <li>DOMMatrix: It returns a reference to a DOMMatrix object, which represents 4×4 matrices, suitable for 2D and 3D operations.</li>
+                <li>frames[]: It represents an array that contains all the frames of a given window.</li>
+                <li>DOMPoint: It returns a reference to a DOMPoint object, which represents a 2D or 3D point in a coordinate system.</li>
+                <li>History: It provides information on the URLs visited in the current window.</li>
+                <li>Length: It represents the number of frames in the current window.</li>
+                <li>DOMRect: It returns a reference to a DOMRect object, which represents a rectangle.</li>
+                <li>fullScreen: This property indicates whether the window is displayed on full screen or not.</li>
+                <li>Location: It contains the URL of the current window.</li>
+                <li>innerHeight: It is used to get the height of the content area of the browser window.</li>
+                <li>innerWidth: It is used to get the width of the content area of the browser window.</li>
+                <li>Name: It contains the name of the referenced window.</li>
+                <li>Window: It returns the current window or frame.</li>
+                <li>Navigator: It returns a reference to the navigator object.</li>
+                <li>outerHeight: It will get the height of the outside of the browser window.</li>
+                <li>outerWidth: It will get the width of the outside of the browser window.</li>
+                <li>Status: It overrides the default status and places a message in the status bar.</li>
+                <li>Top: It returns a reference to the topmost window containing a frame if many windows are opened.</li>
+                <li>Toolbar: It will result in the toolbar object, whose visibility can be toggled in the window.</li>
+                <li>Opener: It contains a reference to the window that opened the current window.</li>
+                <li>Parent: It refers to the frameset in which the current frame is contained.</li>
+                <li>Screen: It refers to the screen object</li>
+                <li>Self: It provides another way to refer to the current window.</li>
+            </ul> 
+            <h3>Methods of Window:</h3>
+            <b>Syntax:</b>
+            <br>
+            <strong>window.method_name;</strong>
+            <br>
+            <br>
+            The methods of Window objects that are commonly used are listed in the below table:
+            <br>
+            <ul>
+                <li>alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.</li>
+                <li>atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.</li>
+                <li>blur(): It is used to remove focus from the current window.</li>
+                <li>btoa(): It is used for encoding a string in base-64 format.</li>
+                <li>clearInterval(): It clears the interval which has been set by the setInterval() function before that.</li>
+                <li>clearTimeout(): It clears the timeout which has been set by the setTimeout()function before that.</li>
+                <li>close(): It is used for closing a certain window or tab of the browser which was previously opened.</li>
+                <li>confirm(): It is used to display a modal dialog with an optional message and two buttons i.e. OK and Cancel. It returns true if the user clicks “OK”, and false otherwise.</li>
+                <li>focus(): It is used to give focus to an element in the current window.</li>
+                <li>getComputedStyle(): It is used to get all the computed CSS properties and values of the specified element.</li>
+                <li>getSelection(): It returns a Selection object representing the range of text selected by the user</li>
+                <li>matchMedia(): It is used to return a MediaQueryList object which represents the result of the specified CSS media query string.</li>
+                <li>open(): It is used to open a new tab or window with the specified URL and name.</li>
+                <li>moveBy(): It is used for moving a window with a specified number of pixels relative to its current coordinates.</li>
+                <li>moveTo(): It is used in the window to move the window from the left and top coordinates.</li>
+                <li>prompt(): It is used to display a dialog with an optional message prompting the user to input some text</li>
+                <li>resizeBy(): It is used to resize a window by the specified amount.</li>
+                <li>scrollBy(): It is used to scroll the document by the given number of pixels.</li>
+                <li>scrollTo(): It is used to scroll to a particular set of coordinates in the document.</li>
+                <li>setInterval(): It repeats a given function at every given time interval.</li>
+                <li>setTimeout(): It executes a function, after waiting a specified number of milliseconds.</li>
+                <li>stop(): It is used to stop the window from loading resources in the current browsing context.</li>
+        </ul>
+        </p>
+        <p>
+            <h2>Diff.b/w Document and Window objects</h2>
+            <h3>Documents Object:</h3>
+            <ul>
+            <li>It represents any HTML document or web page that is loaded in the browser.</li>
+            <li>It is loaded inside the window.</li>
+            <li>It is the object of window property.</li>
+            <li>All the tags, elements with attributes in HTML are part of the document.</li>
+            <li>We can access the document from a window using the window. document.</li>
+            <li>The document is part of BOM (browser object model) and dom (Document object model)</li>
+            <li>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title.</li>
+            <li>syntax:
+            document.propertyname;</li>
+            <li>example:
+            document.title :  will return the title of the document.</li>
+            </ul>
+            <h3>Window Object</h3>
+            <ul>
+                <li>It represents a browser window or frame that displays the contents of the webpage.</li>   
+                <li>It is the very first object that is loaded in the browser.</li>
+                <li>It is the object of the browser.</li>
+                <li>Global objects, functions, and variables of JavaScript are members of the window object.</li>
+                <li>We can access the window from the window only. i.e. window.window</li>
+                <li>The window is part of BOM, not DOM.</li>
+                <li>Properties of the window object cannot be accessed by the document object.</li>
+                <li>syntax:
+                window.propertyname;</li>
+                <li>example:
+                window.innerHeight : will return the height of the content area of the browser</li>
+            </ul>
+        </p>    
+    </body>
+</html> 
